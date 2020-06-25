@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    background-color: rgb(113, 89, 193);
+    max-width: 100%;
+    padding: 20px;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(177, 159, 235);
+    border-radius: 50%;
+}
+
+header .pages {
+    width: 250px;
+    margin: 20px;
+}
+
+header .pages .sobre {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header .links {
+    font-size: 16px;
+    display: flex;
+}
+
+header .links a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 0 0 0 30px;
+    border: 2px solid aliceblue;
+    width: fit-content;
+    border-radius: 30px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header .links a:hover,
+header .sobre:hover {
+    color: greenyellow;
+    transition: 200ms;
+}
+
+body {
+    background: white;
+}
+
+body main {
+    align-items: center;
+}
+
+body main .corpo {
+    margin-top: 150px;
+}
+
+body main h1 {
+    width: 80%;
+    margin: 40px auto;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+}
+
+body main p {
+    width: 60%;
+    margin: 32px auto;
+    font-size: 25px;
+    opacity: 0.7;
+    line-height: 32px;
+    text-align: center;
+}
+
+body main button {
+    width: fit-content;
+    margin: 32px auto;
+    display: block;
+    background-color: rgb(113, 89, 193);
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body main button:hover {
+    background-color: rgb(160, 135, 241);
+}
+
+body main button a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+body main button a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+
+/* CURSOS*/
+
+.cards {
+    width: 90%;
+    margin: 10vh auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(107, 54, 206, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(107, 54, 206, 0.9);
+}
+
+.card-image {
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.card-content {
+    margin: 20px;
+    height: 150px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 28px;
+}
+
+.card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(107, 54, 206, 0.5);
+    border-radius: 15px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    background-color: rgb(113, 89, 193);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+footer .rodape {
+    display: inline-flex;
+    margin: auto;
+}
+
+footer span {
+    width: 30px;
+}
+
+footer span img {
+    width: 100%;
+    height: 100%;
+}
+
+footer a {
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 30px 30px 30px 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*MODAL*/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    /*ocultar modal*/
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+    /* posição relativa para poder usar a posição absoluta do close abaixo*/
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    /* absoluto em realçao ao que tiiver relative, sem o relative o x fica na tela externa*/
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .maximize-modal {
+    color: black;
+    position: absolute;
+    /* absoluto em realçao ao que tiiver relative, sem o relative o x fica na tela externa*/
+    right: 64px;
+    top: 8px;
+    cursor: pointer;
+}
+
+
+/* MODAL  ATIVO */
+
+
+/* quando selecionar o active, aparecerá*/
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    /* preencheu o modal todo, cria novo contexto*/
+    top: 5vh;
+}
+
+.modal.maximize {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
