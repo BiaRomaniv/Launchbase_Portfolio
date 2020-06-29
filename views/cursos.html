@@ -1,0 +1,83 @@
+{% extends "layout.html" %} {% block head %}
+<title>Cursos</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">{% endblock %} {% block content %}
+<main>
+    <div class="cards">
+        <div class="card" id="starter">
+            <div class="card-image">
+                <img src="https://skylab.rocketseat.com.br/static/media/Starter.64c237cc.svg" alt="">
+            </div>
+            <div class="card-content">
+                <h3>
+                    Cursos 100% online para você dar o próximo passo na sua evolução como programador.
+                </h3>
+            </div>
+            <div class="card-info">
+                <h4>
+                    10 módulos
+                </h4>
+                <h4>
+                    <strong> Gratuito </strong>
+                </h4>
+            </div>
+        </div>
+
+        <div class="card" id="launchbase">
+            <div class="card-image">
+                <img src="https://skylab.rocketseat.com.br/static/media/LaunchBase.08285320.svg" alt="">
+            </div>
+            <div class="card-content">
+                <h3>
+                    Domine o desenvolvimento web do zero e acelere na direção dos seus objetivos.
+                </h3>
+            </div>
+            <div class="card-info">
+                <h4>
+                    10 módulos
+                </h4>
+                <h4>
+                    <strong> Inscreva-se </strong>
+                </h4>
+            </div>
+        </div>
+        <div class="card" id="gostack">
+            <div class="card-image">
+                <img src="https://skylab.rocketseat.com.br/static/media/GoStack.83a178a0.svg" alt="">
+            </div>
+            <div class="card-content">
+                <h3>
+                    Domine o back-end, o front-end e o mobile nas tecnologias mais modernas.
+                </h3>
+            </div>
+            <div class="card-info">
+                <h4>
+                    10 módulos
+                </h4>
+                <h4>
+                    <strong> Inscreva-se </strong>
+                </h4>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <a class="maximize-modal" href="#">
+                <i class="material-icons">crop_square</i>
+            </a>
+            <a class="close-modal" href="#">
+                <i class="material-icons">close</i>
+            </a>
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+
+{% endblock %} {% block script%}
+<script src="script.js"></script> {% endblock %}
